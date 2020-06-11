@@ -1,0 +1,28 @@
+begin
+
+ print("integerA:"+"\\").
+ scan($a).
+ print("integerB:"+"\\").
+ scan($b).
+
+ if($a>$b)
+ begin
+  $lower<-$b.
+  $upper<-$a.
+ end
+ if($a<<-$b)
+ begin
+ $lower<-$a.
+ $upper<-$b.
+ end
+
+ $sum<-0.
+ $no<-$lower.
+ for($i<-0.$no<<-$upper.$i++)
+ begin
+  $sum<-$sum+$no.
+  $no<-$no+1.
+ end
+ print($lower+"以上"+$upper+"以下の全整数の和は"+$sum+"ですよ。").
+end. 
+

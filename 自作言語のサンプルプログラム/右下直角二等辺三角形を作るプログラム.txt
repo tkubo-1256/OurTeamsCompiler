@@ -1,0 +1,20 @@
+begin
+
+ print("we make triangle"+"\\").
+ print("short edge"+"\\").
+ scan($len).
+ 
+ for($i<-1.$i<<-$len.$i++)
+ begin
+  for($j<-1.$j<<-$len-$i.$j++)
+  begin
+   print(" ").
+  end
+  for($j<-1.$j<<-$i.$j++)
+  begin
+   print("*").
+  end
+ print("\\").
+ end
+ print("great!!!!"+"\\").
+end.

@@ -1,0 +1,3 @@
+//koubun.h
+
+void koubun();

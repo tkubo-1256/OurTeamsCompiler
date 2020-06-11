@@ -1,0 +1,26 @@
+begin
+ print("num1"+"\\").
+ scan($a).
+ print("num2"+"\\").
+ scan($b).
+ 
+ if($a<$b)
+ begin
+  $tmp<-$a.
+  $a<-$b.
+  $b<-$tmp.
+ end
+
+ $r<-$a%$b.
+ 
+ for($i<-0.$r-<0.$i++)
+ begin
+  $a<-$b.
+  $b<-$r.
+  $r<-$a%$b.
+ end
+ 
+
+ print("G.C.D is "+$b+"\\").
+end. 
+
